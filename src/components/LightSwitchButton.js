@@ -1,6 +1,7 @@
-import React from 'react'; //optional
+import React, { useState } from 'react'; //optional
 
 function LightSwitchButton(props){
+  const [light, setLight] = useState();
 
   return (
     <button className="LightSwitchButton">

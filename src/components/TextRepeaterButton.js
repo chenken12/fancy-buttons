@@ -1,7 +1,8 @@
-import React from 'react'; //optional
+import React, { useState } from 'react'; //optional
 
 function TextRepeaterButton(props){
-
+  const [repetitions, setRepetitions] = useState();
+  
   return (
     <button className="TextRepeaterButton">
       <span>I like this text</span>
