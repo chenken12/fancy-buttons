@@ -1,12 +1,9 @@
 import React from 'react'; //optional
 
 function LightSwitchButton(props){
-  const {light, setLight} = props;
-
-  const handleClick = function() {
-    setLight(light === "on" ? "off" : "on");
-  }; 
-
+  const {light, switchLight} = props;
+  const handleClick = () => switchLight();
+  
   return (
     <button className="LightSwitchButton" onClick={handleClick}>
       {light === "on" && <span><i>💡</i> I'm on!</span>}
